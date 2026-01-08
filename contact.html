@@ -1,0 +1,318 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pur En Lonyo</title>
+     <style>
+         /* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #1b5e20;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+     width: 100px;
+     border-radius: 10px; 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.active{
+    color: aquamarine;
+} 
+.page-header{
+    border-radius: 10px;
+    margin-top: 10px;
+    background: #7da07f;
+    text-align: center;
+}
+
+ /* RESPONSIVE */
+ @media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+}
+} 
+/* ===== HERO SECTION ===== */
+        .icon {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.icon svg {
+    fill: #2e7d32;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    z-index: 1000;
+}
+.success-message {
+    display: none;
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 12px;
+    border-left: 4px solid #2e7d32;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+     </style>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="images/logo.jpeg" alt="Farmers Cooperative Logo" class="logo">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                     <li><a href="news.html">News & Updates</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- HEADER -->
+<header class="page-header">
+    <h1>Contact Us</h1>
+    <p>Get in touch with the cooperative for inquiries and partnerships</p>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-container">
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+        <h2>Our Office</h2>
+
+        <p>
+            <span class="icon">
+                <!-- Location Icon -->
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+            </span>
+            Lira Town, Uganda
+        </p>
+
+        <p>
+            <span class="icon">
+                <!-- Phone Icon -->
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.59a1 1 0 01-.25 1.01l-2.2 2.19z"/></svg>
+            </span>
+            +256 788852311
+        </p>
+
+        <p>
+            <span class="icon">
+                <!-- Email Icon -->
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            alyaoronad6@gmail.com
+        </p>
+
+        <p>
+            <span class="icon">
+                <!-- Clock Icon -->
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 11h5v-2h-4V7h-2v6z"/></svg>
+            </span>
+            Mon – Fri: 8:00 AM – 5:00 PM
+        </p>
+
+        <p>
+            <span class="icon">
+                <!-- WhatsApp Icon -->
+                <svg viewBox="0 0 32 32"><path d="M16 2C8.83 2 3 7.82 3 15c0 2.54.67 5.02 1.94 7.2L3 30l7.97-1.91A13 13 0 0016 28c7.17 0 13-5.82 13-13S23.17 2 16 2zm7.6 18.42c-.32.9-1.86 1.71-2.55 1.81-.66.11-1.49.16-2.4-.15-.56-.18-1.27-.41-2.19-.82-3.9-1.69-6.43-5.65-6.63-5.92-.19-.26-1.59-2.12-1.59-4.04s1-2.86 1.36-3.26c.35-.38.77-.48 1.05-.48h.76c.24.01.56-.08.88.67.32.77 1.09 2.67 1.18 2.86.1.19.16.42.03.67-.13.26-.2.42-.39.64-.19.22-.41.5-.58.67-.19.19-.39.39-.17.76.22.38.97 1.6 2.1 2.6 1.44 1.29 2.66 1.68 3.04 1.88.38.19.61.16.84-.1.23-.26.95-1.1 1.2-1.49.26-.38.52-.32.88-.19.35.13 2.23 1.06 2.61 1.25.38.19.63.29.73.45.1.16.1.93-.22 1.83z"/></svg>
+            </span>
+            <a href="https://wa.me/256778763337" target="_blank">Chat on WhatsApp</a>
+        </p>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+        <p id="successMessage" class="success-message">
+    Your message is being sent via WhatsApp…
+</p>
+
+        <h2>Send Us a Message</h2>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Phone Number">
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+    <h2>Our Location</h2>
+    <iframe
+        src="https://www.google.com/maps?q=Barr&output=embed"
+        loading="lazy">
+    </iframe>
+</section>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/2567XXXXXXXX"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
+        <path d="M16 2C8.83 2 3 7.82 3 15c0 2.54.67 5.02 1.94 7.2L3 30l7.97-1.91A13 13 0 0016 28c7.17 0 13-5.82 13-13S23.17 2 16 2z"/>
+    </svg>
+</a>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Pur En Lonyo. All Rights Reserved.</p>
+     <p>Website developed by <strong>Ronald Alyao</strong></p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const greeting = "Hello, I am interested in the Farmers Cooperative.";
+
+    const text =
+`${greeting}
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Message: ${message}`;
+
+    const whatsappURL =
+        `https://wa.me/256788852311?text=${encodeURIComponent(text)}`;
+
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+
+    // Show confirmation message
+    const successMsg = document.getElementById('successMessage');
+    successMsg.style.display = 'block';
+
+    // Clear form
+    document.getElementById('contactForm').reset();
+
+    // Hide confirmation after 5 seconds
+    setTimeout(() => {
+        successMsg.style.display = 'none';
+    }, 5000);
+});
+</script>
+
+
+</body>
+</html>

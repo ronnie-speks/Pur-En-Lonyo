@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pur En Lonyo | Products</title>
+    <link rel="stylesheet" href="///style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* ===== PRODUCTS PAGE SPECIFIC ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #1b5e20;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+    width: 100px;
+     border-radius: 10px; 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+        .products-section {
+    padding: 60px 0;
+    text-align: center;
+    background: #f5f5f5;
+}
+.active{
+    color: aquamarine;
+} 
+
+.products-section h2 {
+    color: #1b5e20;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.products-section .card {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.products-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.products-section .card h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.25rem;
+    color: #1b5e20;
+}
+
+.products-section .card p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* ICONS IN PRODUCTS CARDS */
+.products-section .card-icon {
+    font-size: 50px;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+/* OPTIONAL: IMAGE STYLE IF YOU USE REAL PRODUCT PHOTOS */
+.products-section .card-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* CARD GRID */
+.products-section .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+/* ===== PRODUCT CARD IMAGES ===== */
+.products-section .card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* circular image */
+    margin-bottom: 15px;
+    border: 2px solid #2e7d32; /* optional: green border for premium look */
+    transition: transform 0.3s ease;
+}
+
+.products-section .card-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* RESPONSIVE */
+ @media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="images/logo.jpeg" alt="Farmers Cooperative Logo" class="logo">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                     <li><a href="news.html">News & Updates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO PRODUCTS ===== -->
+    <section class="hero about-hero">
+        <div class="hero-content">
+            <h2>Our Products</h2>
+            <p>High-quality agricultural produce supplied by our registered farmers.</p>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS GRID ===== -->
+    <section class="about-section products-section">
+        <div class="container">
+            <div class="card-grid">
+                <div class="card">
+                     <img src="images/maize.jpg" alt="Maize" class="card-image">
+                    <h3>Maize</h3>
+                    <p>Top-quality maize harvested by our cooperative members.</p>
+                </div>
+
+                <div class="card">
+                     <img src="images/soya.jpg" alt="soya" class="card-image">
+                    <h3>Soya Beans</h3>
+                    <p>Clean and processed beans ready for market and consumption.</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/flower.jpg" alt="sun flower" class="card-image">
+                    <h3> Sun Flower</h3>
+                    <p>Premium sun flower grown using sustainable farming methods.</p>
+                </div>
+
+                <div class="card">
+                     <img src="images/pea.jpg" alt=" pea" class="card-image">
+                    <h3>Pea</h3>
+                    <p>Nutritious peas produced by our cooperative farmers.</p>
+                </div>
+
+                <div class="card">
+                     <img src="images/tomato.jpg" alt=" vegetables" class="card-image">
+                    <h3>Fruits & Vegetables</h3>
+                    <p>Fresh fruits and vegetables sourced from local farmers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy 2026 Pur En Lonyo. All rights reserved.
+            </p>
+            <p>
+                Website developed by <strong>Ronald Alyao</strong>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

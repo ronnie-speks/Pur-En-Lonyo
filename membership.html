@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pur En Lonyo | Membership</title>
+    <link rel="stylesheet" href="//style.css">
+    <style>
+      /* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #1b5e20;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+     width: 100px;
+     border-radius: 10px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+} 
+.active{
+    color: aquamarine;
+} 
+        /* ===== MEMBERSHIP PAGE ===== */
+.membership-info ul {
+    list-style: disc inside;
+    text-align: left;
+    max-width: 700px;
+    margin: 20px auto 30px auto;
+    line-height: 1.7;
+}
+
+.membership-info a.btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* FORM STYLING */
+.membership-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.membership-form label {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-weight: 600;
+}
+
+.membership-form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.membership-form button {
+    margin-top: 20px;
+    width: 100%;
+}
+/* ===== MEMBERSHIP FEES & SHARES ===== */
+.fees-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
+.fee-item {
+    background: #e8f5e9;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.fee-item h3 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.fee-item p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+ @media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="images/logo.jpeg" alt="Farmers Cooperative Logo" class="logo">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                     <li><a href="news.html">News & Updates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO MEMBERSHIP ===== -->
+    <section class="hero about-hero">
+        <div class="hero-content">
+            <h2>Join Our Cooperative</h2>
+            <p>Become a member and access better markets, training, and support for your farm produce.</p>
+        </div>
+    </section>
+
+    <!-- ===== MEMBERSHIP INFO ===== -->
+    <section class="about-section membership-info">
+        <div class="container">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>Better market prices for your produce</li>
+                <li>Access to quality inputs (seeds, fertilizers, tools)</li>
+                <li>Farmer training and support</li>
+                <li>Reliable buyers and collective bargaining</li>
+            </ul>
+
+            <h2>Membership Fees & Shares</h2>
+
+<div class="fees-table">
+    <div class="fee-item">
+        <h3>Registration Fee</h3>
+        <p>UGX 50,000 (One-time payment)</p>
+    </div>
+
+    <div class="fee-item">
+        <h3>Share Value</h3>
+        <p>UGX 10,000 per share</p>
+    </div>
+
+    <div class="fee-item">
+        <h3>Minimum Shares</h3>
+        <p>10 shares (UGX 100,000)</p>
+    </div>
+
+    <div class="fee-item">
+        <h3>Total Initial Requirement</h3>
+        <p><strong>UGX 150,000</strong></p>
+    </div>
+</div>
+
+<p class="note">
+    Note: Membership fees and share purchases are payable upon approval of membership.
+</p>
+
+
+            <p>Download the membership form below, fill it, and submit to our cooperative office.</p>
+            <a href="forms/membership-form.pdf" class="btn" download>Download Membership Form</a>
+        </div>
+    </section>
+
+    <!-- ===== ONLINE REGISTRATION FORM ===== -->
+    <section class="about-section membership-form">
+        <div class="container">
+            <h2>Register Online</h2>
+
+            <form action="#" method="POST" class="form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+
+                <label for="farm">Farm/Produce Type</label>
+                <input type="text" id="farm" name="farm" required placeholder="Type of produce you grow">
+
+                <button type="submit" class="btn">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy 2026 Pur En Lonyo. All rights reserved.</p>
+            <p>Website developed by <strong>Ronald Alyao</strong></p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

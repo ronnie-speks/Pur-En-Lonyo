@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News & Updates |  Pur En Lonyo</title>
+     <style>
+     /* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #1b5e20;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+     width: 100px;
+     border-radius: 10px; 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.active{
+    color: aquamarine;
+} 
+.page-header{
+    border-radius: 10px;
+    margin-top: 10px;
+    background: #7da07f;
+    text-align: center;
+}
+
+ /* RESPONSIVE */
+ @media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+        /* ===== NEWS & UPDATES ===== */
+.news-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.news-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    color: #2e7d32;
+    margin-bottom: 8px;
+}
+
+.news-date {
+    display: block;
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.news-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+     </style>
+</head>
+<body>
+     <!-- ===== HEADER / NAVIGATION ===== -->
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="images/logo.jpeg" alt="Farmers Cooperative Logo" class="logo">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                     <li><a href="news.html" class="active">News & Updates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<!-- HEADER -->
+<header class="page-header">
+    <h1>News & Updates</h1>
+    <p>Latest announcements, events, and cooperative activities</p>
+</header>
+
+<!-- NEWS SECTION -->
+<section class="news-container">
+
+    <!-- NEWS CARD -->
+    <div class="news-card">
+        <img src="images/meeting.jpg" alt="Members Meeting">
+        <div class="news-content">
+            <h3>Annual General Meeting Held Successfully</h3>
+            <span class="news-date">20 January 2026</span>
+            <p>
+                The cooperative held its Annual General Meeting where members reviewed performance,
+                approved financial reports, and elected new committee members.
+            </p>
+        </div>
+    </div>
+
+    <!-- NEWS CARD -->
+    <div class="news-card">
+        <img src="images/training.jpg" alt="Farmer Training">
+        <div class="news-content">
+            <h3>Farmer Training on Modern Agricultural Practices</h3>
+            <span class="news-date">10 January 2026</span>
+            <p>
+                Members received training on improved crop management, post-harvest handling,
+                and market access strategies.
+            </p>
+        </div>
+    </div>
+
+    <!-- NEWS CARD -->
+    <div class="news-card">
+        <img src="images/produce.jpg" alt="Produce Collection">
+        <div class="news-content">
+            <h3>Produce Collection Center Opened</h3>
+            <span class="news-date">02 January 2026</span>
+            <p>
+                The cooperative officially opened a produce collection center to improve quality
+                control and market access for members.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Pur En Lonyo. All Rights Reserved.</p>
+     <p>Website developed by <strong>Ronald Alyao</strong></p>
+</footer>
+
+</body>
+</html>
